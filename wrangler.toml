@@ -1,0 +1,29 @@
+name = "keki-maintenance-api"
+main = "src/index.ts"
+compatibility_date = "2025-12-02"
+compatibility_flags = [ "nodejs_compat"]
+
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+[env.preview]
+name = "keki-maintenance-api-dev"
+workers_dev = true
+
+
+[limits]
+cpu_ms = 300_000
+
+[dev]
+port = 8793
+
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "cee101021fc54c4db66dd3da1b2869b3"
+localConnectionString = "postgresql://postgres:test@localhost:7055/postgres"
+
+
+[[kv_namespaces]]
+binding = "CACHE_KV"
+id = "1c455446955146bd9fc77600b40c4b62"

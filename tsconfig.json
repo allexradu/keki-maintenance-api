@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": [
+      "ESNext"
+    ],
+    "types": [
+      "@cloudflare/workers-types/2023-07-01",
+      "node"
+    ],
+    "paths": {
+      "@db/*": [
+        "./src/db/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@app/*": [
+        "./src/*"
+      ],
+      "@middlewares/*": [
+        "./src/middlewares/*"
+      ],
+      "@const/*": [
+        "./src/constants/*"
+      ],
+      "@lib/*": [
+        "./src/lib/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@repo/*": [
+        "./src/repositories/*"
+      ],
+      "@openapi/*": [
+        "./src/openapi/*"
+      ],
+      "@data/*": [
+        "./src/data/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ],
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx"
+  },
+}

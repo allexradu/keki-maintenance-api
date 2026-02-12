@@ -1,0 +1,5 @@
+# Generate migrations
+npx drizzle-kit generate
+
+# Run migrations
+npx drizzle-kit migrate
